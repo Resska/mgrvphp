@@ -103,7 +103,7 @@ if ! [ -f /opt/php/options ]; then
 	wget --no-check-certificate https://github.com/Resska/php52-backports-20130717.patch
 	patch -p1 -i php52-backports-*.patch
  else
-	wget --no-check-certificate https://github.com/Resska/options -O /opt/php/src/php-$ver/options.sh
+	wget --no-check-certificate https://raw.githubusercontent.com/Resska/mgrvphp/refs/heads/main/options -O /opt/php/src/php-$ver/options.sh
  fi
 else
  echo "/opt/php/options found"
